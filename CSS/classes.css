@@ -38,3 +38,53 @@
     display: flex;
     gap: 50px;
 }
+
+.page{
+    position: relative;
+    color: white;
+    background-color: var(--cor-primaria);
+    height: 450px;
+    width: 270px;
+    border-radius: 15px;
+}
+
+.page:hover{
+    background-color: var(--cor-detalhes);
+    border: 2px white solid;
+    transform: scale(1.05);
+}
+
+.icon{
+    position: absolute;
+    width: 30%;
+    top: 30%;
+    left: 35%;
+    filter: invert(100%);
+}
+
+.icon2{
+    position: absolute;
+    width: 80%;
+    bottom: 0%;
+    left: 25px;
+    filter: invert(100%);
+}
+
+.rotated-span {
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    transform: translate(-50%, -50%) rotate(270deg);
+}
+
+.description{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 450px;
+    width: 550px;
+    background-color: var(--cor-primaria);
+    border-radius: 5% 5% 5% 5%;
+    gap: 10px;
+}
