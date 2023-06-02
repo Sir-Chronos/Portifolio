@@ -7,6 +7,7 @@
 
     <!--Import css here-->
     <link rel="stylesheet" href="CSS/geral.css">
+    <link rel="stylesheet" href="CSS/classes.css">
 
     <title>Portifólio</title>
 </head>
@@ -15,10 +16,93 @@
         <a href="index.html">
             <img src="images/png/logo-no-background.png" alt="">
         </a>
+
+        <a href="conhecimentos.html"><img src="images/icons/return-button-png-34573.png" alt=""></a>
     </header>
     
-    <main>
+    <main class="main">
 
+        <!--História-->
+        <section>
+            <div class="ex">
+                <h2><u>Breve história</u></h2>
+                <p>A história da rede de computadores remonta ao surgimento dos primeiros computadores na década de 1940. Inicialmente, os computadores eram máquinas isoladas que realizavam cálculos e processamentos independentes. No entanto, com o avanço da tecnologia e a necessidade de compartilhar informações e recursos entre diferentes computadores, surgiram os primeiros esforços para a criação de redes de computadores.</p>
+
+                <p>A ARPANET, desenvolvida nos Estados Unidos na década de 1960, foi uma das primeiras redes de computadores a utilizar a comutação de pacotes, o que permitia a transferência eficiente de dados entre diferentes computadores conectados. Com o tempo, essa rede evoluiu e deu origem à Internet, que se tornou uma rede global de proporções gigantescas.</p>
+
+                <p>A Internet revolucionou a forma como as pessoas se comunicam, trabalham, aprendem e se divertem, proporcionando um acesso rápido e fácil a informações, serviços e recursos de todo o mundo. A história da rede de computadores é marcada por inovações contínuas, como o desenvolvimento de protocolos de comunicação, a criação da World Wide Web e o surgimento de redes sem fio, que possibilitaram a conexão em qualquer lugar.</p>
+            </div>
+        </section>
+
+        <!--Regulamentação-->
+        <section>
+            <div class="ex">
+                <h2><u>Orgão regulamentador</u></h2>
+                <p>No Brasil, o órgão regulamentador das redes é a Agência Nacional de Telecomunicações (ANATEL). A ANATEL é uma autarquia federal responsável por regular, fiscalizar e promover o desenvolvimento das telecomunicações no país.</p>
+                <p>No contexto das redes, a ANATEL tem como objetivo principal garantir a qualidade, a eficiência e a disponibilidade dos serviços de comunicação, incluindo a internet e as redes de telefonia fixa e móvel. Ela estabelece normas e padrões técnicos, realiza licenciamento de empresas provedoras de serviços de rede, monitora a qualidade dos serviços oferecidos, e atua na defesa dos direitos dos consumidores.</p>
+                <p>Além disso, a ANATEL também é responsável por gerenciar o espectro de radiofrequências utilizado pelas redes de comunicação, regulando a sua utilização e evitando interferências entre diferentes serviços e operadoras. Em resumo, a ANATEL desempenha um papel fundamental na regulação e na promoção do setor de redes de telecomunicações no Brasil.</p>
+
+                <p>Além da ANATEL, existe outro órgão responsável pela regulamentação das redes no Brasil, que é o Comitê Gestor da Internet no Brasil (CGI.br). O CGI.br é um órgão multissetorial e consultivo, composto por representantes do governo, da sociedade civil, do setor empresarial e da comunidade acadêmica.</p>
+                <p>Ele tem como principal função formular diretrizes estratégicas para o desenvolvimento da Internet no país. O CGI.br atua na definição de políticas públicas relacionadas à infraestrutura, governança, segurança, acesso e uso da Internet no Brasil. Além disso, o CGI.br é responsável pela gestão do registro de domínios .br e pela coordenação do sistema de nomes de domínio no país. Sua atuação visa promover o acesso universal à Internet, a inclusão digital, a liberdade de expressão e a privacidade dos usuários, entre outros aspectos relacionados ao uso e à regulamentação das redes no Brasil.</p>
+            </div>
+        </section>
+
+        <!--Modelo OSI-->
+        <section>
+            <div class="ex">
+                <img src="images/redes_imgs/osi.png" alt="">
+
+                <p>O modelo OSI (Open Systems Interconnection) é um modelo de referência que descreve como os sistemas de computadores se comunicam. Ele consiste em sete camadas: física, enlace de dados, rede, transporte, sessão, apresentação e aplicação. Cada camada possui funções específicas que contribuem para a comunicação eficiente entre sistemas.</p> 
+                
+                <p>A camada física lida com a transmissão dos dados em nível elétrico ou óptico. A camada de enlace de dados organiza os dados em frames e gerencia o acesso ao meio de transmissão. A camada de rede roteia os pacotes entre diferentes redes. A camada de transporte fornece serviços de transferência de dados confiáveis e controla a divisão dos dados em segmentos. A camada de sessão estabelece e gerencia conexões entre sistemas. </p>
+                
+                <p>A camada de apresentação lida com a representação e a formatação dos dados. A camada de aplicação oferece serviços aos usuários finais, como e-mail, navegadores, entre outros. O modelo OSI fornece um padrão para a comunicação entre sistemas e facilita a interoperabilidade.</p>
+            </div>
+        </section>
+
+        <!--Protocolos-->
+        <section>
+            <div class="ex">
+                <h2>Protocolos</h2>
+                <p>Protocolos de rede são conjuntos de regras e formatos que definem como os dispositivos em uma rede se comunicam e trocam informações. Eles estabelecem um padrão para o envio, recebimento e processamento de dados em uma rede de computadores.</p>
+
+                <p>Os protocolos de rede especificam a estrutura dos pacotes de dados, os métodos de transmissão, o endereçamento dos dispositivos, a detecção e correção de erros, o controle de acesso à rede e outros aspectos relacionados à comunicação.</p>
+
+                <p>Esses protocolos podem ser implementados em diferentes camadas do modelo OSI e são essenciais para garantir a interoperabilidade e a comunicação adequada entre os dispositivos de uma rede.</p>
+
+                <p>Abaixo segue alguns dos protocolos atualmente utilizados:</p>
+            </div>
+
+            <table>
+                <tr>    <th>Protocolo</th>  <th>Descrição</th>  </tr>
+
+                <tr>    <td>TCP/IP</td> <td>TCP/IP (Transmission Control Protocol/Internet Protocol): É o protocolo padrão da Internet, responsável pela transmissão e roteamento de dados entre dispositivos. Ele garante a entrega confiável dos pacotes e fornece endereçamento IP.</td></tr>
+
+                <tr>    <td>Ethernet</td>   <td>Protocolo de rede amplamente utilizado em redes locais (LANs). Ele define os padrões de cabeamento, transmissão e comunicação entre os dispositivos, permitindo o envio e recebimento de dados em alta velocidade.</td></tr>
+
+                <tr>    <td>DNS</td>    <td>DNS (Domain Name System): É um protocolo que traduz nomes de domínio em endereços IP. Ele permite que os usuários acessem sites digitando seu nome de domínio em vez de um endereço IP numérico, facilitando a navegação na web.</td></tr>
+
+                <tr>    <td>HTTP</td>   <td>HTTP (Hypertext Transfer Protocol): É um protocolo utilizado para transferir informações na World Wide Web. Ele define a estrutura das mensagens entre um cliente (navegador) e um servidor, permitindo o acesso a páginas da web, envio de formulários e outros recursos relacionados à comunicação entre cliente e servidor.</td></tr>
+
+                <tr>    <td>SMTP</td>   <td>SMTP (Simple Mail Transfer Protocol): É um protocolo de envio de e-mails. Ele permite que os servidores de e-mail se comuniquem entre si, enviando e recebendo mensagens de e-mail. O SMTP é responsável pelo roteamento e entrega dos e-mails na Internet.</td></tr>
+
+                <tr>    <td>FTP</td>    <td>FTP (File Transfer Protocol): É um protocolo utilizado para transferir arquivos entre computadores em uma rede. Ele permite que os usuários acessem, enviem e recebam arquivos de um servidor FTP por meio de autenticação e comandos específicos.</td></tr>
+
+                <tr>    <td>IP</td> <td>IP (Internet Protocol): É um protocolo responsável pelo endereçamento e roteamento dos pacotes de dados na Internet. Ele garante que os pacotes sejam enviados para o destino correto, independente do tipo de rede subjacente.</td></tr>
+
+                <tr>    <td>UDP</td>    <td>UDP (User Datagram Protocol): É um protocolo de transporte que oferece uma comunicação de dados sem conexão. Ele é utilizado em aplicações que exigem uma transmissão mais rápida, como streaming de mídia e jogos online, porém com menor confiabilidade em comparação com o TCP.</td></tr>
+            </table>
+        </section>
+
+        <!--Exemplos-->
+        <section>
+            <div class="ex">
+                <h2>Exemplo de rede</h2>
+                <img src="images/redes_imgs/ex2.png" alt="">
+                <img src="images/redes_imgs/ex1.png" alt="">
+                <img src="images/redes_imgs/ex3.png" alt="">
+            </div>
+        </section>
     </main>
 </body>
 </html>

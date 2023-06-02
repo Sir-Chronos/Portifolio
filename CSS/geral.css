@@ -52,6 +52,7 @@ section{
     border: #102E44 2px solid;
     padding: 10px;
     width: 80%;
+    gap: 20px;
 
 }
 
@@ -66,11 +67,19 @@ table th{
     text-align: left;
 }
 table td {
-    padding: 5px;
+    padding: 15px;
     border-bottom: 1px solid black;
+}
+
+table td img {
+    width: 350px;
 }
 
 table td:hover{
     font-size: larger;
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+p{
+    text-indent: 15px;
 }

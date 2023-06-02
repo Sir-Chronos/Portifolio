@@ -7,6 +7,7 @@
 
     <!--Import css here-->
     <link rel="stylesheet" href="CSS/geral.css">
+    <link rel="stylesheet" href="CSS/classes.css">
 
     <title>Portifólio</title>
 </head>
@@ -15,10 +16,151 @@
         <a href="index.html">
             <img src="images/png/logo-no-background.png" alt="">
         </a>
+        <a href="conhecimentos.html"><img src="images/icons/return-button-png-34573.png" alt=""></a>
     </header>
     
-    <main>
+    <main class="main">
+
+        <!--Binário-->
+        <section>
+            <h2>Números binários</h2>
+
+            <div class="ex">
+                <p>Os números binários são um sistema numérico que utiliza apenas dois dígitos: 0 e 1. É a base do sistema de numeração binário, que é amplamente utilizado em sistemas computacionais e eletrônicos.</p>
+
+                <p>No sistema binário, cada dígito ou bit (abreviação de binary digit) representa um valor específico, onde 0 representa a ausência de algo e 1 representa a presença de algo.</p>
+            </div>
+
+            <table>
+                <tr> <th>Binário</th> <th>Decimál</th> </tr>
+
+                <tr> <td>0000</td> <td>0</td></tr>
+                <tr> <td>0001</td> <td>1</td></tr>
+                <tr> <td>0010</td> <td>2</td></tr>
+                <tr> <td>0011</td> <td>3</td></tr>
+                <tr> <td>0100</td> <td>4</td></tr>
+                <tr> <td>0101</td> <td>5</td></tr>
+                <tr> <td>0110</td> <td>6</td></tr>
+                <tr> <td>0111</td> <td>7</td></tr>
+                <tr> <td>1000</td> <td>8</td></tr>
+                <tr> <td>1001</td> <td>9</td></tr>
+                <tr> <td>1010</td> <td>10</td></tr>
+
+            </table>
+
+            <div class="ex">
+                <p>A contagem binária segue as mesmas regras básicas de contagem que utilizamos no sistema decimal, mas em vez de ter 10 dígitos (0 a 9), possui apenas 2 dígitos (0 e 1).</p>
+
+                <p>No sistema binário, cada posição de um número binário representa uma potência de 2. A posição mais à direita é a posição 0, a próxima é a posição 1, depois a posição 2 e assim por diante. Para entender melhor, vamos dar uma olhada em um exemplo:
+                <br>
+                <br>
+                    0: 0000
+                <br>
+                <br>
+                    1: 0001
+                </p>
+
+                <p>Quando atingimos o valor 1, não há mais dígitos à direita para aumentar, então, avançamos para a próxima posição, que é a posição 1. Agora, ao adicionar um 1 na posição 1, temos o número 2 em binário. Continuando:
+                    <br>
+                    <br>
+                    2: 0010
+                    <br>
+                    3: 0011
+                </p>
+
+                <p>E assim por diante.</p>
+
+                <p>Essa é a ideia básica da contagem binária. Cada posição representa uma potência de 2 e, ao adicionar um 1 nessa posição, incrementamos o valor. A contagem continua seguindo esse padrão até atingir o valor desejado.</p>
+
+            </div>
+        </section>
+
+        <!--Memória-->
+        <section>
+            <h2>Tipos de memória</h2>
+
+            <table>
+                <tr>    <th>Tipo</th>   <th>Propiedade</th>    </tr>
+
+                <tr>    <td>RAM</td>    <td>Armazena dados temporariamente enquanto o sistema está em execução.</td></tr>
+
+                <tr>    <td>ROM</td>    <td>Memória não volatil. Os dados gravados são permanentes, E não podem ser alterados pelo usuário.</td></tr>
+
+                <tr>    <td>Cache</td>  <td>É uma memória de alta velocidade e baixa capacidade, localizada próximo ao processador.</td></tr>
+
+                <tr>    <td>Virtual</td>    <td>É uma extensão da memória física do computador que usa espaço em disco rígido para simular memória adicional.</td></tr>
+
+                <tr>    <td>Flash</td>  <td>É um tipo de memória não volátil usada para armazenamento de dados em dispositivos como pen drives, cartões de memória e unidades de estado sólido (SSDs). </td></tr>
+
+                <tr>    <td>HDD</td>    <td>É uma memória não volátil que armazena dados em discos magnéticos.</td></tr>
+
+                <tr>    <td>SSD</td>    <td>É um tipo de memória não volátil que usa chips de memória flash para armazenar dados. Os SSDs são mais rápidos e duráveis ​​do que os HDDs tradicionais.</td></tr>
+
+            </table>
+
+        </section>
+
+        <!--Equipamentos de controle-->
+        <section>
+            <h2>Equipamentos de controle e supervisão</h2>
+
+            <p class="ex">Abaixo esta descrito alguns dos diversos equipamentos utilizados na industria para auxiliar no controle e supervisão de uma planta industrial</p>
+
+            <table>
+
+                <tr>    <th>Equipamento</th>    <th>Função</th></tr>
+                
+                <tr>    <td onmouseover="showTooltip(event, 0)" onmouseout="hideTooltip()">CLPs</td>   <td>Dispositivos eletrônicos programáveis que controlam máquinas e processos industriais. Eles são amplamente utilizados para automatizar tarefas repetitivas e sequenciais.</td></tr>
+
+                <tr>    <td onmouseover="showTooltip(event, 1)" onmouseout="hideTooltip()">SCADA</td>  <td>Esses sistemas permitem monitorar e controlar processos industriais em tempo real. Eles coletam dados de sensores e dispositivos conectados, fornecendo uma interface gráfica para os operadores visualizarem e interagirem com o sistema.</td></tr>
+
+                <tr>    <td onmouseover="showTooltip(event, 2)" onmouseout="hideTooltip()">IHMs</td>   <td>São painéis de controle que permitem aos operadores interagir com os sistemas automatizados. Eles fornecem uma interface de usuário amigável para monitorar e controlar máquinas e processos.</td></tr>
+
+                <tr>    <td onmouseover="showTooltip(event, 3)" onmouseout="hideTooltip()">DCS</td>    <td>São sistemas que controlam e supervisionam processos complexos e distribuídos em uma planta industrial. Eles consistem em controladores distribuídos conectados em rede que coordenam as operações de diferentes áreas.</td></tr>
+
+                <tr>    <td onmouseover="showTooltip(event, 4)" onmouseout="hideTooltip()">CPs</td>    <td>São dispositivos eletrônicos que controlam variáveis de processo, como temperatura, pressão, nível e fluxo. Eles recebem informações de sensores e atuam em dispositivos de controle, ajustando as variáveis para manter o processo dentro de parâmetros desejados.</td></tr>
+
+                <tr>    <td onmouseover="showTooltip(event, 5)" onmouseout="hideTooltip()">Redes Industriais</td>  <td>São sistemas de comunicação que permitem a troca de dados entre equipamentos de automação. Exemplos de redes industriais incluem Ethernet industrial, Profibus, Modbus e DeviceNet.</td></tr>
+
+                <tr>    <td onmouseover="showTooltip(event, 6)" onmouseout="hideTooltip()">Registradores de Dados</td> <td>São dispositivos utilizados para coletar e armazenar dados de processo ao longo do tempo. Eles podem ser usados para análise posterior, diagnóstico de problemas e otimização de processos.</td></tr>
+
+                <tr>    <td onmouseover="showTooltip(event, 7)" onmouseout="hideTooltip()">Sensores e Transmissores</td>   <td>São dispositivos que convertem grandezas físicas, como temperatura, pressão, fluxo e nível, em sinais elétricos para monitoramento e controle. Eles fornecem dados para os sistemas de automação e supervisão.</td></tr>
+
+
+            </table>
+
+        </section>
+
+        <!--Maquinas industriais-->
+        <section>
+            <h2>Robótica</h2>
+
+                <table>
+                    <tr>    <td><img src="images/auto_imgs/solda.png"></td> <td><u>Robôs de Soldagem</u>: <br> Esses robôs industriais são projetados especificamente para executar tarefas de soldagem em diversas indústrias, como a automotiva e a metalúrgica. <br> <br> Eles são programados para realizar soldas precisas e repetitivas em estruturas metálicas, peças e componentes. Com alta velocidade e precisão, esses robôs contribuem para aumentar a produtividade e a qualidade do processo de soldagem.</td></tr>
+
+                    <tr>    <td><u>Robôs de pintura</u>: <br>Esses robôs são amplamente utilizados em indústrias como a automobilística e a de manufatura de produtos de metal e plástico. Sua função principal é aplicar tinta, verniz ou revestimentos em superfícies de forma precisa e uniforme. <br><br> Esses robôs garantem uma aplicação consistente, evitando desperdício de material e proporcionando acabamentos de alta qualidade.</td>   <td><img src="images/auto_imgs/pintura.png"></td></tr>
+
+                    <tr>    <td><img src="images/auto_imgs/montagem.png"></td>  <td><u>Robôs de Montagem</u>: Esses robôs industriais são responsáveis por realizar tarefas de montagem em linhas de produção.<br><br> Eles podem ser programados para montar peças e componentes, realizar encaixes precisos, apertar parafusos, realizar soldagem por pontos, entre outras operações. Sua versatilidade e precisão os tornam essenciais na indústria automotiva, eletrônica e de produtos de consumo.</td></tr>
+
+                    <tr>    <td><u>Robôs de paletização</u>: <br>Esses robôs são amplamente utilizados em indústrias de embalagens e logística. Sua função é empilhar caixas, sacos ou produtos em paletes de forma organizada e eficiente. <br><br> Os robôs de paletização podem ser programados para lidar com diferentes tamanhos e formatos de produtos, aumentando a velocidade de paletização e reduzindo o esforço físico dos trabalhadores.</td>   <td><img src="images/auto_imgs/palet.png"></td></tr>
+
+                    <tr>    <td><img src="images/auto_imgs/inspe.png"></td>  <td><u>Robôs de inspeção</u>: Esses robôs são projetados para realizar inspeções de qualidade em peças, produtos acabados e estruturas em diversos setores industriais, como o de petróleo e gás, automotivo e aeroespacial.<br><br> Equipados com sensores e câmeras de alta resolução, eles são capazes de detectar defeitos, medir dimensões, identificar irregularidades e realizar análises precisas. Esses robôs contribuem para garantir a qualidade dos produtos e reduzir a necessidade de inspeções manuais.</td></tr>
+
+                </table>
+
+        </section>
+
+        <!--Programação e prototipagem-->
+        <section>
+            <div class="ex">
+                <h2>Programação</h2>
+                <p></p>
+            </div>
+        </section>
+
+        <div id="tela_aux" class="tela_aux"></div>
 
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

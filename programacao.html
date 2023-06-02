@@ -16,6 +16,8 @@
         <a href="index.html">
             <img src="images/png/logo-no-background.png" alt="">
         </a>
+
+        <a href="conhecimentos.html"><img src="images/icons/return-button-png-34573.png" alt=""></a>
     </header>
     
     <main class="main">
@@ -23,7 +25,6 @@
             <h2>Operadores lógicos e matemáticos</h2>
 
             <table>
-
                 <tr> <th>Operador</th> <th>Simbolo</th> <th>Exemplo</th> </tr>
 
                 <tr> <td>E</td> <td>&&</td> <td><strong>IF</strong>(true && true){}</td> </tr>
@@ -34,6 +35,7 @@
                 <tr> <td>Divisão</td> <td>/</td> <td>25 / 5 = 5</tr>
                 <tr> <td>Multplicação</td> <td>*</td> <td>25 * 5 = 125</tr>
                 <tr> <td>Modulação</td> <td>%</td> <td>45 % 2 = 1</tr>
+                <tr> <td>Atribuição</td> <td>=</td> <td>VAR x = 1</tr>    
                 <tr> <td>Potênciação</td> <td>**</td> <td>5**2 = 25</tr>
                 <tr> <td>Incremento</td> <td>++</td> <td>num++</tr>
                 <tr> <td>Decremento</td> <td>--</td> <td>num--</tr>
@@ -42,25 +44,147 @@
                 <tr> <td>Atribuição de multplicação</td> <td>*=</td> <td>num *= 4</tr>
                 <tr> <td>Atribuição de divisão</td> <td>/=</td> <td>num /= 4</tr>
                 <tr> <td>Atribuição de módulo</td> <td>%=</td> <td>num %= 4</tr>
-                
 
             </table>
         </section>
 
+        <!--operadores-->
         <section>
             <h2>Variáveis condicionais</h2>
+
+            <table>
+
+                <tr> <th>Tipo</th> <th>Descrição</th> </tr>
+
+                <tr> <td>IF</td> <td>Verifica se a condição é verdadeira e executa um bloco de código.</td></tr>
+                <tr> <td>ELSE-IF</td> <td>Caso a condição do IF não se aplicar, essa sera testada./td></tr>
+                <tr> <td>ELSE</td> <td>Executa um bloco de código caso as condições anteriores forem falsas.</td></tr>
+                <tr> <td>SWITCH-CASE</td> <td>Testa o valor de uma variável e executa um códico correspondente.</td></tr>
+
+            </table>
+
+            <div class="ex">
+                <h3>Exemplos</h3>
+                <pre>
+                    //Inicializa a variável x como 10
+
+                    var x = 10
+                    if(<mark>x</mark> < 10){
+                        x += 2;     //Caso menor que 10 é somado 2 a x
+                    }
+                    else if(<mark>x</mark> > 10){
+                        x -= 2      //Caso maior que 10 é subtraido 2 a x
+                    }
+                    else{
+                        alert(<mark>x</mark>) //Caso as anteriores sejam falsas imprime x em um popup
+                    }
+
+                    switch(<mark>x</mark>){
+                        case 12:
+                            <mark>x</mark> *= 2;  //se x valer 12 multiplica x por 2
+                            break;
+
+                        case 8:
+                            <mark>x</mark> /= 2;  //se x valer 8 divide x por 2
+                            break;
+
+                        default:
+                            alert(<mark>x</mark>)  //Caso as anteriores sejam falsas imprime x em um popup
+                        
+                    }
+                </pre>
+            </div>
         </section>
 
+        <!--variaveis-->
         <section>
             <h2>Loops de repetição</h2>
+
+            <table>
+
+                <tr> <th>Tipo</th> <th>Descrição</th> </tr>
+
+                <tr> <td>FOR</td> <td>Inicializa um variável X com determinado valor e a compara a outro, X recebe incremento ou decremento ao final do bloco de código que é executado até que a comparação retorne falso.</td></tr>
+                <tr> <td>FOR-EACH</td> <td>Recebe um array e executa o bloco de códigos para cada um de seus elementos.</td></tr>
+                <tr> <td>WHILE</td> <td>Executa um bloco de código enquanto a condição for verdadeira.</td></tr>
+                <tr> <td>DO-WHILE</td> <td>Executa um bloco de código e ao final verifica uma condição, se verdadeira executa o bloco novamente.</td></tr>
+
+            </table>
+
+            <div class="ex">
+                <h3>Exemplos</h3>
+                <pre>
+                    var x = true;
+                    var y = 10;
+                    var array = ['0', '1', '2', '3', '4', '5']
+
+                    for(<mark>y</mark>; <mark>y</mark> > 0;<mark>y</mark>--){
+                        alert(<mark>y</mark>)    //Verifica se y é maior que 0, se verdadeiro diminue y
+                    }
+
+                    // Percorre o Array,
+                    // para cada um de seus elementos é exibido um alerta com o valor do elemento
+
+                    <mark>array</mark>.forEach(element => {  alert(array[element])   });
+
+                    while(<mark>x</mark>){   //Enquanto x for verdadeiro executa esse bloco
+
+                        alert('Inicio do loop')
+                        <mark>x</mark> = false
+                        alert('fim do loop')
+                    }
+
+                    do{
+                        alert(<mark>x</mark>) // moostra o x
+                        <mark>x</mark> = !<mark>x</mark> // Inverte o valor de x
+                    }while(<mark>x</mark>)
+                </pre>
+            </div>
+
         </section>
 
+        <!--Funções-->
         <section>
             <h2>Funções</h2>
+            <table>
+                <tr><th>Function: </th>  <td>As <mark>funcões</mark> executam um trecho determinado de seu código ao serem <mark>chamadas</mark>, elas podem ou não ter parâmetros.</td></tr>
+            </table>
+
+            <div class="ex">
+                <h3>Exemplos</h3>
+                <pre>
+                    var horas = "00:00"
+
+                    <mark>mostraHoras(horas)</mark> //chama a função mostraHoras dando como parâmetro a var horas
+
+                    function mostraHoras(x){
+                        // Escopo da função
+                        alert(horas)
+                    }
+                </pre>
+            </div>
+
         </section>
 
+        <!--Arrays-->
         <section>
             <h2>Arrays</h2>
+
+            <table>
+                <tr><th>Array: </th>  <td>Os <mark>Arrays</mark> são uma estrutura de dados que permite armazenar uma coleção de elementos do mesmo tipo em uma sequência. Cada elemento do array é identificado por um índice, que representa sua posição na sequência.</td></tr>
+            </table>
+
+            <div class="ex">
+                <h3>Exemplos</h3>
+                <pre>
+                    var <mark>lista_numeros</mark> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] // cria um Array com 10 numeros
+
+                    for(i = 0; i < lista_numero.lenght; i++ ){ 
+                        //imprime o numero que estiver dentro da lista na posição i
+                        console.log(lista_numero[i]) 
+                    }
+                </pre>
+            </div>
         </section>
     </main>
 </body>

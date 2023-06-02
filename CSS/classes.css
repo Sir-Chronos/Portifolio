@@ -1,3 +1,10 @@
+:root{
+    --cor-primaria:#102E44;
+    --cor-segundaria: #B2FCFB;
+    --cor-terciaria: #d7f3f6;
+    --cor-detalhes: #4eb2c9;
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -88,3 +95,31 @@
     border-radius: 5% 5% 5% 5%;
     gap: 10px;
 }
+
+.ex{
+    background-color: white;
+    display: flex;
+    width: 80%;
+    gap: 25px;
+    flex-direction: column;
+    border: #102E44 1px solid;
+    padding: 10px;
+    justify-content: left;
+}
+
+.tela_aux {
+    position: absolute;
+    display: none;
+    width: 600px;
+    height: 300px;
+    gap: 20px;
+    background-color: var(--cor-terciaria);
+    padding: 10px;
+    border: #102E44 2px solid;
+}
+
+.tela_aux img {
+    height: 160px;
+    width: 160px;
+}
+
