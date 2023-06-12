@@ -167,6 +167,7 @@
             </div>
         </section>
 
+        <!--modelagem-->
         <section>
             <div class="ex">
                 <h2>Modelagem de dados</h2>
@@ -219,8 +220,68 @@
                         <p>As entidades Autor e Editora também podem ter atributos adicionais, como data de nascimento, biografia, entre outros.</p>
                 
             </div>
+
+            <div class="ex">
+                <h3>Modelo lógico</h3>
+                <p>Enquanto a modelagem conceitual é focada nos conceitos e na estrutura de alto nível do banco de dados, a modelagem lógica é mais detalhada e visa traduzir o modelo conceitual em termos técnicos e específicos do sistema de gerenciamento de banco de dados (SGBD) a ser utilizado.</p>
+
+                <p>Durante a modelagem lógica, são levados em consideração os aspectos técnicos, como as capacidades e restrições do SGBD escolhido. A modelagem lógica envolve a conversão das entidades, atributos e relacionamentos do modelo conceitual em tabelas, colunas e chaves primárias e estrangeiras, além de especificar os tipos de dados, índices e outras restrições.</p>
+            </div>
+
+            <div class="ex">
+                <h3>Exemplo</h3>
+                <img src="images/banco/modelo-lógico.png" alt="">
+            </div>
+
+            <div class="ex">
+                <h3>Modelo fisico</h3>
+                <p>O modelo físico é a terceira e última etapa do processo de projeto de banco de dados, seguindo a modelagem conceitual e lógica. Nesta etapa, o foco está na implementação prática do banco de dados, considerando os aspectos de armazenamento físico dos dados, desempenho e otimização.</p>
+
+                <p>Durante a modelagem física, são considerados os recursos e características específicas do Sistema de Gerenciamento de Banco de Dados (SGBD) a ser utilizado, como o motor de armazenamento, a linguagem de consulta, as configurações de desempenho e as restrições de hardware. O objetivo é traduzir o modelo lógico em uma implementação concreta e eficiente no ambiente de banco de dados escolhido.</p>
+            </div>
+
+            <div class="ex">
+                <h3>Exemplo</h3>
+                <img src="images/banco/livraria.png" alt="">
+            </div>
         </section>
  
+        <!--Normalização-->
+        <section>
+            <div class="ex">
+                <h2>Normalização de banco de dados</h2>
+
+                <p>Normalização é o processo de organização de dados em um banco de dados. Isso inclui a criação de tabelas e o estabelecimento de relações entre essas tabelas de acordo com as regras projetadas para proteger os dados e tornar o banco de dados mais flexível, eliminando a redundância e a dependência inconsistente.</p>
+
+                <p>Dados redundantes desperdiçam espaço em disco e criam problemas de manutenção. Se os dados existentes em mais de um local devem ser alterados, eles devem ser alterados exatamente da mesma maneira em todos os locais. Uma alteração de endereço do cliente é muito mais fácil de implementar se esses dados são armazenados apenas na tabela Clientes e em nenhum outro lugar no banco de dados.</p>
+
+                <h3>1° forma normal</h3>
+                <pre>
+                    Uma tabela esta na 1ª FN quando:
+
+                    - Somente possui valores atômicos
+                    - Não há grupos de atributos repetidos (há apenas um dado por coluna nas linhas)
+                    - Existe uma chave primária
+                    - Relação não possui atributos multivalorados ou relações aninhadas
+                </pre>
+                <h3>2° forma normal</h3>
+                <pre>
+                    Uma relação esta na 2ª FN quando:
+
+                    - Está na 1FN
+                    - Não contém dependências parciais
+                </pre>
+
+                <h3>3° forma normal</h3>
+                <pre>
+                    Uma relação esta na 3ª FN quando:
+
+                    - Está na 2FN
+                    - Não contém dependências transitiva (A relação não deve ter um atributo
+                     não-chave funcionalmente determinado por um outro atributo não-chave)
+                </pre>
+            </div>
+        </section>
     </main>
     <a href="#rt"><button class="return rotate"></button></a>
 </body>
