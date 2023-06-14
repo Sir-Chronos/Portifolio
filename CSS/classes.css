@@ -101,18 +101,6 @@
     transform: translate(-50%, -50%) rotate(270deg);
 }
 
-.description{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    height: 450px;
-    width: 550px;
-    background-color: var(--cor-primaria);
-    border-radius: 5% 5% 5% 5%;
-    gap: 10px;
-}
-
 .ex{
     background-color: white;
     display: flex;
@@ -135,8 +123,31 @@
     border: #102E44 2px solid;
 }
 
-.tela_aux img {
-    height: 160px;
-    width: 160px;
+.projetos{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    height: 450px;
+    border-radius: 5% ;
+    background: var(--cor-primaria);
 }
 
+.projetos button{
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    top: 50px;
+    right: 20px;
+}
+
+.rotated-span2 {
+    position: absolute;
+    color: white;
+    top: 22%;
+    left: 5%;
+    transform: translate(-50%, -50%) rotate(270deg);
+
+}

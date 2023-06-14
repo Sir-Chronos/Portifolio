@@ -87,3 +87,11 @@ p{
 pre{
     background-color: rgb(213, 212, 212);
 }
+
+ol{
+    padding: 25px;
+}
+
+ul{
+    padding-left: 25px;
+}
