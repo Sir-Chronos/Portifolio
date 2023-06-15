@@ -22,6 +22,10 @@ body{
     background-color: var(--cor-terciaria);
 }
 
+body::-webkit-scrollbar{
+    width: 0;
+}
+
 header{
     display: flex;
     align-items: center;
